@@ -1,0 +1,23 @@
+# Overaching Tasks
+- [ ] Design UI
+  - [ ] User experience flow
+  - [ ] LOFI wireframe
+  - [ ] Complete wireframe
+- [ ] Design local database to store user history (settings, study history, progress)
+  - [ ] Store previous settings
+  - [ ] Store study history
+  - [ ] Store level and streaks
+  - [ ] Store music and playlists recently played
+  - [ ] Store notes
+  - [ ] Encrypt stored information
+- [ ] Utilize YouTube and Spotify API to implement music
+  - [ ] Youtube link compatibility
+  - [ ] Spotify playlist compatibility
+- [ ] Design FSM for phases and their lengths
+  - [ ] State transition diagram and formulas
+- [ ] Design an algorithm for level up points
+  - [ ] Define a function dependent on time and streak
+- [ ] Implement miscellaneous features
+  - [ ] Settings
+  - [ ] Alarms
+  - [ ] Notebook
