@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop_Qt_6_5_2_MinGW_64_bit-Debug/Pomodoro-Timer_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop_Qt_6_5_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop_Qt_6_5_2_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/Pomodoro-Timer",
+	"CMAKE_SOURCE_DIR" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/Pomodoro-Timer",
+	"INCLUDE_DIR" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop_Qt_6_5_2_MinGW_64_bit-Debug/Pomodoro-Timer_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/Pomodoro-Timer/chime.wav"
+	],
+	"LOCK_FILE" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop_Qt_6_5_2_MinGW_64_bit-Debug/CMakeFiles/Pomodoro-Timer_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "D:/Qt/6.5.2/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop_Qt_6_5_2_MinGW_64_bit-Debug/CMakeFiles/Pomodoro-Timer_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/Pomodoro-Timer/resources.qrc",
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-bbddbd35a76ba7755f6c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Pomodoro-Timer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Pomodoro-Timer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Pomodoro-Timer-Debug-6ac9dbfac2dcd5ab138d.json",
+					"name" : "Pomodoro-Timer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Pomodoro-Timer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Pomodoro-Timer_autogen-Debug-ea9a8e19d12bd72bd85a.json",
+					"name" : "Pomodoro-Timer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Pomodoro-Timer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Pomodoro-Timer_autogen_timestamp_deps-Debug-62d60d5e0a10b7ec4e16.json",
+					"name" : "Pomodoro-Timer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop_Qt_6_5_2_MinGW_64_bit-Debug",
+		"source" : "C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/Pomodoro-Timer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
