@@ -1,9 +1,0 @@
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/Pomodoro-Timer.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/edit_cache.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/list_install_components.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/install.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/install/local.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/install/strip.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/Pomodoro-Timer_autogen_timestamp_deps.dir
-C:/Users/brepo/OneDrive/Desktop/VSCode/projects/pomodoro-timer/build-Pomodoro-Timer-Desktop-Debug/CMakeFiles/Pomodoro-Timer_autogen.dir
