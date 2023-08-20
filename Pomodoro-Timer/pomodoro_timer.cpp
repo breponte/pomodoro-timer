@@ -12,6 +12,8 @@ Pomodoro_Timer::Pomodoro_Timer(QWidget *parent)
     hours = 0;
     minutes = 30;
     seconds = 0;
+    cycle = 1;
+    mod_cycle = ui->settings_widget->findChild<QSpinBox*>("edit_freq")->text().toInt();
     {
         timer = new QTimer(this);
         connect(timer, SIGNAL(timeout()), this, SLOT(timerClock()));
@@ -21,8 +23,8 @@ Pomodoro_Timer::Pomodoro_Timer(QWidget *parent)
         effect.setVolume(0.25);
     }
     updateTimerDisplay();
-    ui->notes_frame->setVisible(false);
-    ui->settings_frame->setVisible(false);
+    ui->notes_widget->setVisible(false);
+    ui->settings_widget->setVisible(false);
 }
 
 Pomodoro_Timer::~Pomodoro_Timer()
@@ -36,7 +38,12 @@ void Pomodoro_Timer::timerClock()
         on_start_button_clicked();
         switch (state) {
             case study:
-                state = breakShort;
+                cycle++;
+                if (mod_cycle > 0 && cycle % mod_cycle == 0) {
+                    state = breakLong;
+                } else {
+                    state = breakShort;
+                }
                 break;
             case breakShort:
                 state = study;
@@ -112,23 +119,23 @@ void Pomodoro_Timer::on_reset_button_clicked()
     ui->dial->setEnabled(true);
     switch (state) {
         case study:
-            hours = 0;
-            minutes = 30;
-            seconds = 0;
+            hours = ui->settings_widget->findChild<QSpinBox*>("edit_hours")->text().toInt();
+            minutes = ui->settings_widget->findChild<QSpinBox*>("edit_minutes")->text().toInt();
+            seconds = ui->settings_widget->findChild<QSpinBox*>("edit_seconds")->text().toInt();
             ui->state_label->setText("Study");
             ui->dial->setValue(0);
             break;
         case breakShort:
-            hours = 0;
-            minutes = 5;
-            seconds = 0;
+            hours = ui->settings_widget->findChild<QSpinBox*>("edit_hours_2")->text().toInt();
+            minutes = ui->settings_widget->findChild<QSpinBox*>("edit_minutes_2")->text().toInt();
+            seconds = ui->settings_widget->findChild<QSpinBox*>("edit_seconds_2")->text().toInt();
             ui->state_label->setText("Short Break");
             ui->dial->setValue(30);
             break;
         case breakLong:
-            hours = 0;
-            minutes = 30;
-            seconds = 0;
+            hours = ui->settings_widget->findChild<QSpinBox*>("edit_hours_3")->text().toInt();
+            minutes = ui->settings_widget->findChild<QSpinBox*>("edit_minutes_3")->text().toInt();
+            seconds = ui->settings_widget->findChild<QSpinBox*>("edit_seconds_3")->text().toInt();
             ui->state_label->setText("Long Break");
             ui->dial->setValue(60);
             break;
@@ -151,12 +158,21 @@ void Pomodoro_Timer::updateTimerDisplay()
 
 void Pomodoro_Timer::on_notes_button_clicked()
 {
-    ui->notes_frame->setVisible(!ui->notes_frame->isVisible());
+    ui->notes_widget->setVisible(!ui->notes_widget->isVisible());
 }
 
 
 void Pomodoro_Timer::on_settings_button_clicked()
 {
-    ui->settings_frame->setVisible(!ui->settings_frame->isVisible());
+    ui->settings_widget->setVisible(!ui->settings_widget->isVisible());
+}
+
+
+void Pomodoro_Timer::on_edit_freq_valueChanged(int arg1)
+{
+    cycle = 0;
+    mod_cycle = cycle = ui->settings_widget->findChild<QSpinBox*>("edit_freq")->text().toInt();
+    state = study;
+    on_reset_button_clicked();
 }
 

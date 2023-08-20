@@ -34,6 +34,8 @@ private slots:
 
     void updateTimerDisplay();
 
+    void on_edit_freq_valueChanged(int arg1);
+
 private:
     Ui::Pomodoro_Timer *ui;
     enum State{ study, breakShort, breakLong };
@@ -41,6 +43,8 @@ private:
     int hours;
     int minutes;
     int seconds;
+    int cycle;
+    int mod_cycle;
     QTimer *timer;
     QSoundEffect effect;
 };
